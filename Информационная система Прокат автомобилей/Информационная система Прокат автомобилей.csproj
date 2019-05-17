@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4109329D-8003-4238-B14F-44B73CA72C40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Информационная_система_Прокат_автомобилей</RootNamespace>
+    <AssemblyName>Информационная система Прокат автомобилей</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft_Office_Interop_Excel">
+      <HintPath>..\Microsoft_Office_Interop_Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Auto_fr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Auto_fr.Designer.cs">
+      <DependentUpon>Add_Auto_fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Client.Designer.cs">
+      <DependentUpon>Add_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Form.Designer.cs">
+      <DependentUpon>Admin_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client_Form.Designer.cs">
+      <DependentUpon>Client_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client_List.Designer.cs">
+      <DependentUpon>Client_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commander.cs" />
+    <Compile Include="Edit_auto_fr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_auto_fr.Designer.cs">
+      <DependentUpon>Edit_auto_fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Form.Designer.cs">
+      <DependentUpon>Employee_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guide_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guide_Form.Designer.cs">
+      <DependentUpon>Guide_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Enter_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Enter_Form.Designer.cs">
+      <DependentUpon>Main_Enter_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password_form.Designer.cs">
+      <DependentUpon>Password_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesTable.Designer.cs">
+      <DependentUpon>SalesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Прокат_автоDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Прокат_автоDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="Add_Auto_fr.resx">
+      <DependentUpon>Add_Auto_fr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Client.resx">
+      <DependentUpon>Add_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Form.resx">
+      <DependentUpon>Admin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client_Form.resx">
+      <DependentUpon>Client_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client_List.resx">
+      <DependentUpon>Client_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_auto_fr.resx">
+      <DependentUpon>Edit_auto_fr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Form.resx">
+      <DependentUpon>Employee_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guide_Form.resx">
+      <DependentUpon>Guide_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Enter_Form.resx">
+      <DependentUpon>Main_Enter_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password_form.resx">
+      <DependentUpon>Password_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SalesTable.resx">
+      <DependentUpon>SalesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Прокат_автоDataSet.xsc">
+      <DependentUpon>Прокат_автоDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Прокат_автоDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Прокат_автоDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Прокат_автоDataSet.xss">
+      <DependentUpon>Прокат_автоDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
